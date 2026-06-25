@@ -1,7 +1,9 @@
 body {
   /* Base page styles: typography, background, and reset spacing */
   font-family: Arial, sans-serif;
-  background-color: #f5f5f5;
+  background-image: url('joshgmit-abstract-5035370.jpg');
+  background-size: cover; 
+  background-position: center;
   color: #333;
   margin: 0;
   padding: 0;
@@ -50,7 +52,7 @@ main {
 .details {
   /* Card-like containers used for the bio and the details grid */
   background-color: white;
-  border-radius: 10px;
+  border: 2px solid #e1e1e1;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
   padding: 24px;
   margin-bottom: 20px;
@@ -60,6 +62,7 @@ main {
 .card h3 {
   /* Headings inside cards */
   margin-top: 0;
+  text-align: center;
 }
 
 .details {
@@ -100,6 +103,7 @@ a:hover {
 
 footer {
   /* Footer: small, centered note and contact info */
+  background-color: #000050;
   text-align: center;
   padding: 14px 20px;
   color: #666;
