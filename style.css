@@ -1,9 +1,10 @@
 body {
   /* Base page styles: typography, background, and reset spacing */
   font-family: Arial, sans-serif;
-  background-image: url('joshgmit-abstract-5035370.jpg');
-  background-size: cover; 
+  background-image: url("img/hexagons.jpg");
+  background-size: cover;
   background-position: center;
+  background-attachment: fixed;
   color: #333;
   margin: 0;
   padding: 0;
@@ -48,12 +49,18 @@ main {
   padding: 0 20px;
 }
 
-.bio,
-.details {
+.bio {
   /* Card-like containers used for the bio and the details grid */
   background-color: white;
   border: 2px solid #e1e1e1;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  padding: 24px;
+  margin-bottom: 20px;
+}
+
+.details {
+  /* Card-like containers used for the bio and the details grid */
+  background-color: rgba(255, 255, 255, 0);
   padding: 24px;
   margin-bottom: 20px;
 }
@@ -74,6 +81,7 @@ main {
 
 .card {
   /* Individual card styling: border, padding, and rounded corners */
+  background-color: white;
   border: 1px solid #e1e1e1;
   border-radius: 10px;
   padding: 18px;
