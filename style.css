@@ -13,6 +13,17 @@ header {
   text-align: center;
 }
 
+/* Profile picture in the header */
+.profile-pic {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto 12px;
+  border: 4px solid rgba(255,255,255,0.6);
+}
+
 header h1 {
   margin: 0;
   font-size: 2.5rem;
@@ -46,6 +57,7 @@ main {
 .details {
   display: grid;
   gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .card {
@@ -76,4 +88,17 @@ footer {
   text-align: center;
   padding: 14px 20px;
   color: #666;
+}
+
+/* Responsive adjustments for the three-column layout */
+@media (max-width: 900px) {
+  .details {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 520px) {
+  .details {
+    grid-template-columns: 1fr;
+  }
 }
