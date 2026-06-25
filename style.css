@@ -1,4 +1,5 @@
 body {
+  /* Base page styles: typography, background, and reset spacing */
   font-family: Arial, sans-serif;
   background-color: #f5f5f5;
   color: #333;
@@ -7,6 +8,7 @@ body {
 }
 
 header {
+  /* Header styles: background color, text color and spacing for the top section */
   background-color: #4a90e2;
   color: white;
   padding: 40px 20px;
@@ -15,6 +17,7 @@ header {
 
 /* Profile picture in the header */
 .profile-pic {
+  /* Profile picture in the header: circular, fixed size, and framed */
   width: 120px;
   height: 120px;
   border-radius: 50%;
@@ -25,16 +28,19 @@ header {
 }
 
 header h1 {
+  /* Header text: main name */
   margin: 0;
   font-size: 2.5rem;
 }
 
 header .tagline {
+  /* Tagline under the name */
   margin: 10px 0 0;
   font-size: 1.1rem;
 }
 
 main {
+  /* Main content wrapper: centers the content and constrains width */
   max-width: 900px;
   margin: 30px auto;
   padding: 0 20px;
@@ -42,6 +48,7 @@ main {
 
 .bio,
 .details {
+  /* Card-like containers used for the bio and the details grid */
   background-color: white;
   border-radius: 10px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
@@ -51,40 +58,48 @@ main {
 
 .bio h2,
 .card h3 {
+  /* Headings inside cards */
   margin-top: 0;
 }
 
 .details {
+  /* Details grid: lays out the small info cards in columns */
   display: grid;
   gap: 20px;
   grid-template-columns: repeat(3, 1fr);
 }
 
 .card {
+  /* Individual card styling: border, padding, and rounded corners */
   border: 1px solid #e1e1e1;
   border-radius: 10px;
   padding: 18px;
 }
 
 .card ul {
+  /* Lists inside cards: indentation and spacing */
   padding-left: 20px;
   margin: 0;
 }
 
 .card li {
+  /* Spacing between list items */
   margin-bottom: 8px;
 }
 
 a {
+  /* Link styles used site-wide */
   color: #4a90e2;
   text-decoration: none;
 }
 
 a:hover {
+  /* Hover state for links */
   text-decoration: underline;
 }
 
 footer {
+  /* Footer: small, centered note and contact info */
   text-align: center;
   padding: 14px 20px;
   color: #666;
